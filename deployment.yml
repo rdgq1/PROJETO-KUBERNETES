@@ -43,7 +43,7 @@ spec:
             claimName: mysql-dados
 
 ---
-apiVersion: apps/v1 # Corrigido: era 'app/v1', agora é 'apps/v1'
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   name: php
