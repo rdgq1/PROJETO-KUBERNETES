@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-mysql
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard-rwd      # <== adicione esta linha
+  hostPath:
+    path: "/data/mysql"
+  persistentVolumeReclaimPolicy: Retain
